@@ -4,19 +4,25 @@ int main(void)
     int sum=0;
     int k;
 
-    for (k=0;k<5;k++)
+    k=0;
+    while(k<5)
     {
-        sum+=k; //use something different in "while" version
+        sum=sum+k; //use something different in "while" version
+        printf("number being added is %d, comulative sum is %d\n", k, sum);
+        k++;
     }
 
-    printf ("%d\n",sum);
+    printf ("%d\n",sum);//conversion character %d\n - prints "sum" in the quotes
 
-    k=5;
+    //k=5;
 
-    while (k>0) {
-        k=k-1; //use something different in "for" version
+    printf("counting down\n");
+
+    for (k=10;k>=0; k--)
+    {
+        //k=k-1; //use something different in "for" version
         printf ("%d\n", k);
     }
-
+    printf("blastoff!\n");
 }
 
